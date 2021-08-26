@@ -1,0 +1,110 @@
+.topnav input[type=text] {
+  width: 500px;
+  padding: 9px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav img{
+  margin-left: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-container  {
+  padding: 16px 10px;
+}
+
+.search-container button{
+  background-color: red;
+  color: white;
+  float: right;
+  padding: 11.5px;
+  margin-top: 8.4px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: rgb(230, 187, 187);
+}
+
+.topnav .search-container{
+  float: right;
+}
+
+.header a{
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 84px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.header{
+    overflow: hidden;
+    background-color: red;    
+}
+
+.header ul{
+  list-style-type: none;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  margin-right: 500px;
+  margin-left: 500px;
+  margin-top: 40px;
+  background-color: #f2f2f2;
+}
+
+input[type=name], input[type=email], input[type=password], input[type=cpassword]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  
+}
+
+.container button {
+  background-color: rgb(0,123,255);
+  border-radius: 20px;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  width: 100%;
+  border: none;
+  width: 40%;
+  margin-left: 80px;
+}
+
+.container{
+  padding: 27px;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+  text-align: center;
+}
+
