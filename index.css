@@ -1,10 +1,56 @@
-.topnav input[type=text] {
-  width: 500px;
-  padding: 9px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+/* ******************Common Fields******************** */
+
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(233,233,233);
+
+
+}
+
+.background-image{
+  background-image: url(assets/image/BloodImage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 500px;
+  color: red;
+}
+
+/* *************Sign-in Sign-up Admin*********** */
+
+.search-container a{
+  text-decoration: none;
+  color: black;
+}
+
+.search-container button{
+  background-color:rgb(233,233,233);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border:1px solid red;
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.search-container  {
+  padding: 16px 10px;
+}
+
+.search-container button:hover {
+  background: rgb(230, 187, 187);
+}
+
+.search-container{
+  float: right;
+}
+
+/* *****************************Image CSS***************************  **/
 
 .topnav {
   overflow: hidden;
@@ -15,103 +61,163 @@
   margin-left: 10px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.search-container  {
-  padding: 16px 10px;
-}
-
-.search-container button{
-  background-color: red;
-  color: white;
-  float: right;
-  padding: 11.5px;
-  margin-top: 8.4px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: rgb(230, 187, 187);
-}
-
-.topnav .search-container{
-  float: right;
-}
+/* ************************Header Menu Items*********************/
 
 .header a{
 float: left;
 display: block;
 color: white;
 text-align: center;
-padding: 14px 84px;
+padding: 14px 123px;
 text-decoration: none;
 font-size: 17px;
 }
 
 .header{
     overflow: hidden;
-    background-color: red;    
+    background-color: red;   
+   
 }
 
 .header ul{
   list-style-type: none;
 }
 
-form {
-  border: 3px solid #f1f1f1;
-  margin-right: 500px;
-  margin-left: 500px;
-  margin-top: 40px;
-  background-color: #f2f2f2;
-}
-
-input[type=name], input[type=email], input[type=password], input[type=cpassword]{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  
-}
-
-.container button {
-  background-color: rgb(0,123,255);
-  border-radius: 20px;
-  color: white;
-  padding: 14px 20px;
-  border: none;
-  width: 100%;
-  border: none;
-  width: 40%;
-  margin-left: 80px;
-}
+/* *****************Cards Detials ***************************/
 
 .container{
-  padding: 27px;
-  
+  margin-left: 100px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.card {
+  transition: 0.8s;
+  width: 18%;
+  border-radius: 5px;
+  border: 1px solid #DCDCDC;
+  float: left;
+  background-color: white;
+  margin :30px;
 }
 
-h2{
+.card img {
+  width: 80%;
+  margin: 20px;
+  border: 1px solid red;
+}
+
+.card{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+h4,h5{
+  text-align: center;
+  padding: 4px;
+}
+
+.Blood-details button{
+  background-color:white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border:1px solid red;
+  margin-top: 10px;
+  margin-left: 63px;
+}
+
+.Blood-details{
+  padding: 16px;
+  background-color: #F4F3F2;
+  border-radius: 0 0 5px 5px;
+}
+
+/* *********************h2 available **********************/
+
+.available{
+  padding-top: 30px;
   text-align: center;
 }
 
-h4{
+/* ****************see more button for available blood************** */
+
+.go{
+  padding-top: 420px;
+  margin-right: 90px;
+  margin-left: 23px;
   text-align: center;
-  padding-top: 23px;
 }
 
+.go button{
+  background-color:RED;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border:1px solid red;
+  margin-top: 10px;
+  margin-left: 63px;
+}
 
+.go a{
+  color: WHITE;
+  text-decoration: none;
+}
 
+/* *****************see more button for available blood ***************/
+
+.go-table{
+  padding-top: 33px;
+  margin-right: 90px;
+  margin-left: 23px;
+  text-align: center;
+}
+
+.go-table button{
+  background-color:RED;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 20px;
+  border:1px solid red;
+  margin-top: 10px;
+  margin-left: 63px;
+}
+
+.go-table a{
+  color: WHITE;
+  text-decoration: none;
+}
+
+/* hr underline */
+
+.hr-line{
+  margin-top: 35px;
+}
+
+/* ***************table for need blood************************** */
+
+td, tr {
+  background-color: white;
+  border: 1px solid rgb(233,233,233);
+  text-align: center;
+  padding: 8px;
+}
+
+th{
+background-color : #808080;
+border: 1px solid rgb(233,233,233);
+padding: 8px;
+color: white;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin : 0 auto;
+}
+
+table {
+  margin-top: 45px;
+}
+
+/* over */

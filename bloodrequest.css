@@ -8,24 +8,25 @@
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(233,233,233);
-
+  }
+ 
+  /* *************************Search bar****************************** */
+  
+  .search-container input[type=text] {
+    width: 310px;
+    padding: 9px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
   }
   
-/* *************Sign-in Sign-up Admin*********** */  
-
-  .search-container a{
-    text-decoration: none;
-    color: black;
-  }
-
   .search-container button{
-    background-color:rgb(233,233,233);
+    background-color: red;
+    color: white;
+    float: right;
+    padding: 11.5px;
+    margin-top: 8.4px;
     border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border:1px solid red;
-    margin-top: 10px;
-    margin-left: 5px;
     cursor: pointer;
   }
   
@@ -59,7 +60,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 123px;
+  padding: 14px 75px;
   text-decoration: none;
   font-size: 17px;
   }
@@ -67,17 +68,16 @@
   .header{
       overflow: hidden;
       background-color: red;   
+     
   }
   
   .header ul{
     list-style-type: none;
   }
-  
-  /* *********************login Form**************************** */
 
-  /* *********************login Input******************* */
-  
-  input[type=name], input[type=email], input[type=password], input[type=cpassword]{
+  /* **************blood request form**************** */
+
+  input[type=name], input[type=bloodgroup] {
     width: 100%;
     padding: 15px;
     margin: 15px 0px;
@@ -86,8 +86,26 @@
     background-color: #f2f2f2;  
   }
 
+  h2{
+    text-align: center;
+  }
 
-  /* ******************login button****************** */
+  hr{
+    border: 1px solid rgb(233,233,233);
+    margin-top: 20px;
+    margin-bottom: 20PX;
+    }
+
+ /* *************container for blood request************** */
+
+.container{
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-top: 65px;
+    background-color: white;
+    padding: 27px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 
   .login-button{
     background-color: red; 
@@ -102,45 +120,6 @@
   }
 
   a{
-      color: white;
-      text-decoration: none;
-  }
-
-
-  /****************** Under Line **************************/
-
-  hr {
-    border: 1px solid rgb(233,233,233);
-    margin-top:20px;
-    margin-bottom: 20PX;
-  }
-  
-
-  /********************* h2 words *********************/
-
-  h2{
-    text-align: center;
-  }
-
- /* ************div .container************* */
-
-  .container{
-    margin-right: 500px;
-    margin-left: 500px;
-    margin-top: 65px;
-    background-color: white;
-    padding: 27px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  /* *****************new user******************8 */
-
-  .new-user{
-      text-align: center;
-      padding-right: 10px;
-      padding-top: 20px;
-  }
-
-  .new-user a{
-      color: red;
-  }
+    color: white;
+    text-decoration: none;
+   }

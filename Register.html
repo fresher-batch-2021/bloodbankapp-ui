@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="Register.css">
 </head>
 
 <body>
@@ -33,14 +33,15 @@
         <!-- -------------header ends--------------- -->
 
         <nav class="header">
+
             <ul>
                 <a href="index.html">
                     <li>HOME</li>
                 </a>
-                <a href="">
+                <a href="Login.html">
                     <li>AVAILABLE</li>
                 </a>
-                <a href="">
+                <a href="Login.html">
                     <li>DONATE BLOOD</li>
                 </a>
                 <a href="">
@@ -51,6 +52,7 @@
 
         </nav>
 
+
     </header>
 
     <!-- --------------------- Common Fields----------------- -->
@@ -59,9 +61,15 @@
 
         <div class="container">
 
-            <h2>Login</h2>
+            <h2>Register</h2>
 
             <hr>
+
+            <div class="name">
+
+                <input type="name" id="name" placeholder="Name" name="name">
+
+            </div>
 
             <div class="email">
 
@@ -75,13 +83,13 @@
 
             </div>
 
-            <button class="login-button"><a href="bloodinfo.html">Submit</a></button>
+            <div class="Cpassword">
 
-            <div class="new-user">
-
-                <h4>New User ? <a href="Register.html">Click Here</a></h4>
+                <input type="password" id="cpswd" placeholder="Confirm Password" name="cpswd">
 
             </div>
+
+            <button class="register-button"><a href="Login.html">Submit</a></button>
 
         </div>
 
