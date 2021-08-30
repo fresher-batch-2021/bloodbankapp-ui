@@ -8,12 +8,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(233,233,233);
-
-
 }
 
 .background-image{
-  background-image: url(assets/image/BloodImage.png);
+  background-image: url(assets/image/newbackground.jpg);
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 500px;
