@@ -30,8 +30,6 @@ function bloodrequest() {
 
     else {
 
-        console.log(data);
-
         let url = "https://97233c10-e8bd-4684-98ca-20e5eaf8dd35-bluemix.cloudant.com/bloodbank-bloodrequest/";
 
         const dbusername = "apikey-v2-msz5pn0gamsoigpftay3cndoju75rdeejvo1cd3paw0";
@@ -47,8 +45,6 @@ function bloodrequest() {
         axios.post(url, formData, { headers: { 'Authorization': basicAuth } }).then(res => {
 
             let data = res.data;
-
-            console.log(data);
 
             alert("Successfull");
 
