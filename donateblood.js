@@ -1,18 +1,18 @@
-function bloodrequest() {
+function donateblood(){
 
     event.preventDefault();
 
-    var requestname = document.getElementById("name").value;
-    var requestblood = document.getElementById("bloodgroup").value;
+    var donatebloodname = document.getElementById("name").value;
+    var donatebloodgroup = document.getElementById("bloodgroup").value;
 
     let data = {
-        "name": requestname,
-        "blood": requestblood
+        "name" : donatebloodname,
+        "bloodgroup" : donatebloodgroup
     }
 
     console.log(data);
 
-    if (requestname == "" || requestname == null) {
+    if(donatebloodname == "" || donatebloodname == ""){
 
         alert("Enter Your Name");
 
@@ -20,7 +20,7 @@ function bloodrequest() {
 
     }
 
-    if (requestblood == "" || requestblood == null) {
+    if(donatebloodgroup == "" || donatebloodgroup == ""){
 
         alert("Enter Your Blood Group");
 
@@ -28,11 +28,11 @@ function bloodrequest() {
 
     }
 
-    else {
+    else{
 
         console.log(data);
 
-        let url = "https://97233c10-e8bd-4684-98ca-20e5eaf8dd35-bluemix.cloudant.com/bloodbank-bloodrequest/";
+        let url = "https://97233c10-e8bd-4684-98ca-20e5eaf8dd35-bluemix.cloudant.com/bloodbank-blooddonate/";
 
         const dbusername = "apikey-v2-msz5pn0gamsoigpftay3cndoju75rdeejvo1cd3paw0";
         const dbpassword = "1cd6b51776516316358ce28da3097318";
@@ -40,8 +40,8 @@ function bloodrequest() {
         const basicAuth = 'Basic ' + btoa(dbusername + ":" + dbpassword);
 
         let formData = {
-            name: requestname,
-            bloodtype: requestblood
+            name: donatebloodname,
+            bloodtype: donatebloodgroup
         };
 
         axios.post(url, formData, { headers: { 'Authorization': basicAuth } }).then(res => {
@@ -52,7 +52,7 @@ function bloodrequest() {
 
             alert("Successfull");
 
-            window.location.href = "bloodneed.html"
+            window.location.href = "available.html"
 
         });
 
