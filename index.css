@@ -123,7 +123,7 @@ h4,h5{
   border-radius: 20px;
   border:1px solid red;
   margin-top: 10px;
-  margin-left: 63px;
+  margin-left: 69px;
 }
 
 .Blood-details{
@@ -203,10 +203,11 @@ td, tr {
 }
 
 th{
+  color: white;
 background-color : #808080;
 border: 1px solid rgb(233,233,233);
 padding: 8px;
-color: white;
+
 }
 
 table {
@@ -271,8 +272,9 @@ input[type=name], input[type=email], input[type=password], input[type=cpassword]
 }
 
 .register-button{
-  background-color: red; 
   color: white;
+  background-color: red; 
+  
     border-radius: 25px;
     border: none;
     padding: 12px 21px;
@@ -305,8 +307,3 @@ a{
   margin-left: 130px;
   padding-bottom: 13px;
 }
-
-
-
-
-
