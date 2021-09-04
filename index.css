@@ -12,14 +12,12 @@ body {
 
 .background-image{
   background-image: url(assets/image/newbackground.jpg);
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  background-repeat: no-repeat;
+  min-height: 500px;
+  /* Center and scale the image nicely */
   background-position: center;
-  padding-top: 500px;
-  color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* *************Sign-in Sign-up Admin*********** */
@@ -94,14 +92,14 @@ font-size: 17px;
 }
 
 .card {
-  transition: 0.8s;
   width: 18%;
   border-radius: 5px;
   border: 1px solid #DCDCDC;
   float: left;
   background-color: white;
   margin :30px;
-}
+  margin-left: 56px;
+ }
 
 .card img {
   width: 80%;
@@ -222,4 +220,93 @@ table {
   margin-top: 45px;
 }
 
-/* over */
+/* *********************Footer*********************** */
+
+.footer-dark {
+  padding:30px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark .social {
+  margin-left: 565px;
+}
+
+.footer-dark .social  a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .social  a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  margin-left: 581px ;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+/* *********Register form**********8 */
+
+input[type=name], input[type=email], input[type=password], input[type=cpassword]{
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  margin-left: 50px;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  background-color: #f2f2f2;  
+}
+
+.register-button{
+  background-color: red; 
+  color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 12px 21px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.form-container{
+  position: absolute;
+  right: 0;
+  margin: 39px;
+  padding: 27px;
+  padding-top: 30px;
+  padding-left: 1px;
+  padding-right: 100px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.9;
+}
+
+.form-container h2{
+  margin-left: 130px;
+  padding-bottom: 13px;
+}
+
+
+
+
+

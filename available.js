@@ -29,7 +29,7 @@ function availableblood() {
 
                 <h4 >${task.name}</h4>
                 <h5>Blood Group : ${task.bloodtype}</h5>  
-                <button>Add</button>
+                <button>View</button>
 
             </div>
 

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
 <body>
@@ -22,14 +23,11 @@
 
                 <button><a href="admin.html"> Admin </a></button>
 
-                <button><a href="Register.html"> Sign Up </a></button>
-
                 <button><a href="Login.html"> Sign In </a></button>
 
             </nav>
 
         </nav>
-
 
         <!-- -------------header ends--------------- -->
 
@@ -58,69 +56,103 @@
 
     <div class="background-image">
 
+        <form>
+
+            <div class="form-container">
+
+                <h2>Register</h2>
+
+                <div class="name">
+
+                    <input type="name" id="name" placeholder="Name" name="name">
+
+                </div>
+
+                <div class="email">
+
+                    <input type="email" id="email" placeholder="Email" name="email">
+
+                </div>
+
+                <div class="password">
+
+                    <input type="password" id="pswd" placeholder="Password" name="pswd">
+
+                </div>
+
+                <div class="Cpassword">
+
+                    <input type="password" id="cpswd" placeholder="Confirm Password" name="cpswd">
+
+                </div>
+
+                <button class="register-button" type="button" onclick="store()"> Submit </button>
+
+            </div>
+
+        </form>
+
     </div>
 
     <hr>
 
     <h2 class="available">Available</h2>
 
-    <div class="container">
+    <div class="card">
 
-        <div class="card">
+        <img src="assets/image/donors-photo.jpg" alt="Avatar">
 
-            <img src="assets/image/donors-photo.jpg" alt="Avatar">
+        <div class="Blood-details">
 
-            <div class="Blood-details">
-
-                <h4>Sudharsanan</h4>
-                <h5>Blood Group : B+</h5>
-                <button>Add</button>
-
-            </div>
+            <h4>Sudharsanan</h4>
+            <h5>Blood Group : B+</h5>
+            <button>View</button>
 
         </div>
 
-        <div class="card">
+    </div>
 
-            <img src="assets/image/donors-photo.jpg" alt="Avatar">
+    <div class="card">
 
-            <div class="Blood-details">
+        <img src="assets/image/donors-photo.jpg" alt="Avatar">
 
-                <h4>Nirmal</h4>
-                <h5>Blood Group : A+</h5>
-                <button>Add</button>
+        <div class="Blood-details">
 
-            </div>
-
-        </div>
-
-        <div class="card">
-
-            <img src="assets/image/donors-photo.jpg" alt="Avatar">
-
-            <div class="Blood-details">
-
-                <h4>Ramesh</h4>
-                <h5>Blood Group : AB+</h5>
-                <button>Add</button>
-
-            </div>
+            <h4>Nirmal</h4>
+            <h5>Blood Group : A+</h5>
+            <button>View</button>
 
         </div>
 
-        <div class="card">
+    </div>
 
-            <img src="assets/image/donors-photo.jpg" alt="Avatar">
+    <div class="card">
 
-            <div class="Blood-details">
+        <img src="assets/image/donors-photo.jpg" alt="Avatar">
 
-                <h4>Kumar</h4>
-                <h5>Blood Group : O+</h5>
-                <button>Add</button>
+        <div class="Blood-details">
 
-            </div>
+            <h4>Ramesh</h4>
+            <h5>Blood Group : AB+</h5>
+            <button>View</button>
 
         </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="assets/image/donors-photo.jpg" alt="Avatar">
+
+        <div class="Blood-details">
+
+            <h4>Kumar</h4>
+            <h5>Blood Group : O+</h5>
+            <button>View</button>
+
+        </div>
+
+    </div>
 
     </div>
 
@@ -133,76 +165,76 @@
 
     <hr class="hr-line">
 
-    <div class = "table-container">
+    <div class="table-container">
 
-    <h2 class="available">Blood Needed</h2>
+        <h2 class="available">Blood Needed</h2>
 
-    <table>
-        <strong>
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Name</th>
-                    <th>Blood Group</th>
-                </tr>
-            </thead>
-        </strong>
+        <table>
+            <strong>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Blood Group</th>
+                    </tr>
+                </thead>
+            </strong>
 
-        <tr>
-            <td>1</td>
-            <td>Sudharsanan</td>
-            <td>B+</td>
-        </tr>
+            <tr>
+                <td>1</td>
+                <td>Sudharsanan</td>
+                <td>B+</td>
+            </tr>
 
-        <tr>
-            <td>2</td>
-            <td>Nirmal</td>
-            <td>A+</td>
-        </tr>
+            <tr>
+                <td>2</td>
+                <td>Nirmal</td>
+                <td>A+</td>
+            </tr>
 
-        <tr>
-            <td>3</td>
-            <td>Swetha</td>
-            <td>O+</td>
-        </tr>
+            <tr>
+                <td>3</td>
+                <td>Swetha</td>
+                <td>O+</td>
+            </tr>
 
-        <tr>
-            <td>4</td>
-            <td>Tamil Mani</td>
-            <td>O-</td>
-        </tr>
+            <tr>
+                <td>4</td>
+                <td>Tamil Mani</td>
+                <td>O-</td>
+            </tr>
 
-        <tr>
-            <td>5</td>
-            <td>Naveen</td>
-            <td>AB+</td>
-        </tr>
+            <tr>
+                <td>5</td>
+                <td>Naveen</td>
+                <td>AB+</td>
+            </tr>
 
-        <tr>
-            <td>6</td>
-            <td>Ragavan</td>
-            <td>A-</td>
-        </tr>
+            <tr>
+                <td>6</td>
+                <td>Ragavan</td>
+                <td>A-</td>
+            </tr>
 
-        <tr>
-            <td>7</td>
-            <td>Sabari</td>
-            <td>B+</td>
-        </tr>
+            <tr>
+                <td>7</td>
+                <td>Sabari</td>
+                <td>B+</td>
+            </tr>
 
-        <tr>
-            <td>8</td>
-            <td>Kumar</td>
-            <td>O-</td>
-        </tr>
+            <tr>
+                <td>8</td>
+                <td>Kumar</td>
+                <td>O-</td>
+            </tr>
 
-        <tr>
-            <td>9</td>
-            <td>Ganesh</td>
-            <td>A+</td>
-        </tr>
+            <tr>
+                <td>9</td>
+                <td>Ganesh</td>
+                <td>A+</td>
+            </tr>
 
-    </table>
+        </table>
 
     </div>
 
@@ -213,6 +245,22 @@
     </div>
 
     <hr class="hr-line">
+
+    <div class="footer-dark">
+
+        <footer>
+
+            <div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i
+                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                            class="icon ion-social-instagram"></i></a></div>
+            </div>
+
+            <p class="copyright">Company Name © Blood Bank</p>
+
+        </footer>
+    </div>
 
 </body>
 
