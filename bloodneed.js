@@ -25,7 +25,7 @@ function bloodneed(){
 
         i++;
 
-        content = content + `<tr><td>${i}</td><td>${task.name}</td><td>${task.bloodtype}</td></tr>`;
+        content = content + `<tr><td>${i}</td><td>${task.name}</td><td>${task.bloodtype}</td><td>${task.phonenumber}</td></tr>`;
 
     }
 

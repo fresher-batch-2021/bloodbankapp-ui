@@ -4,6 +4,8 @@ function bloodrequest() {
 
     var requestname = document.getElementById("name").value;
     var requestblood = document.getElementById("bloodgroup").value;
+    var requestphonenumber = document.getElementById("phoneNumber").value;
+    var requestbloodcity = document.getElementById("city").value;
 
     let data = {
         "name": requestname,
@@ -28,6 +30,22 @@ function bloodrequest() {
 
     }
 
+    if(requestphonenumber == "" || requestphonenumber == null){
+
+        alert("Enter Your Phone Number");
+
+        return false;
+
+    }
+
+    if(requestbloodcity == "" || requestbloodcity == null){
+
+        alert("Enter Your City");
+
+        return false;
+
+    }
+
     else {
 
         let url = "https://97233c10-e8bd-4684-98ca-20e5eaf8dd35-bluemix.cloudant.com/bloodbank-bloodrequest/";
@@ -39,7 +57,9 @@ function bloodrequest() {
 
         let formData = {
             name: requestname,
-            bloodtype: requestblood
+            bloodtype: requestblood,
+            phonenumber : requestphonenumber,
+            city : requestbloodcity
         };
 
         axios.post(url, formData, { headers: { 'Authorization': basicAuth } }).then(res => {
@@ -48,7 +68,7 @@ function bloodrequest() {
 
             alert("Successfull");
 
-            window.location.href = "bloodneed.html"
+            window.location.href = "bloodneed.html";
 
         });
 

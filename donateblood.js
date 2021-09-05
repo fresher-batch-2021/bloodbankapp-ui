@@ -4,6 +4,9 @@ function donateblood(){
 
     var donatebloodname = document.getElementById("name").value;
     var donatebloodgroup = document.getElementById("bloodgroup").value;
+    var donatephonenumber = document.getElementById("phoneNumber").value;
+    var donatecity = document.getElementById("city").value;
+
 
     let data = {
         "name" : donatebloodname,
@@ -12,7 +15,7 @@ function donateblood(){
 
     console.log(data);
 
-    if(donatebloodname == "" || donatebloodname == ""){
+    if(donatebloodname == "" || donatebloodname == null){
 
         alert("Enter Your Name");
 
@@ -20,9 +23,25 @@ function donateblood(){
 
     }
 
-    if(donatebloodgroup == "" || donatebloodgroup == ""){
+    if(donatebloodgroup == "" || donatebloodgroup == null){
 
         alert("Enter Your Blood Group");
+
+        return false;
+
+    }
+
+    if(donatephonenumber == "" || donatephonenumber == null){
+
+        alert("Enter Your Phone Number");
+
+        return false;
+
+    }
+
+    if(donatecity == "" || donatecity == null){
+
+        alert("Enter Your City");
 
         return false;
 
@@ -41,7 +60,9 @@ function donateblood(){
 
         let formData = {
             name: donatebloodname,
-            bloodtype: donatebloodgroup
+            bloodtype: donatebloodgroup,
+            phonenumber : donatephonenumber,
+            city : donatecity
         };
 
         axios.post(url, formData, { headers: { 'Authorization': basicAuth } }).then(res => {
@@ -52,7 +73,9 @@ function donateblood(){
 
             alert("Successfull");
 
-            window.location.href = "available.html"
+            window.location.href = "available.html";
+
+            console.log(formData);
 
         });
 
