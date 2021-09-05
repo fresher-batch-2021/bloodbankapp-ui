@@ -32,14 +32,11 @@
   
   .search-container  {
     padding: 16px 10px;
+    float: right;
   }
   
   .search-container button:hover {
     background: rgb(230, 187, 187);
-  }
-  
-  .search-container{
-    float: right;
   }
   
   /* *****************************Image CSS***************************  **/
