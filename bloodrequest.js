@@ -7,12 +7,12 @@ function bloodrequest() {
     var requestphonenumber = document.getElementById("phoneNumber").value;
     var requestbloodcity = document.getElementById("city").value;
 
-    let data = {
+    let datas = {
         "name": requestname,
         "blood": requestblood
     }
 
-    console.log(data);
+    console.log(datas);
 
     if (requestname == "" || requestname == null) {
 

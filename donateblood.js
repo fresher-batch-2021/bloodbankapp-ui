@@ -8,12 +8,12 @@ function donateblood(){
     var donatecity = document.getElementById("city").value;
 
 
-    let data = {
+    let datas = {
         "name" : donatebloodname,
         "bloodgroup" : donatebloodgroup
     }
 
-    console.log(data);
+    console.log(datas);
 
     if(donatebloodname == "" || donatebloodname == null){
 
