@@ -33,17 +33,13 @@ hr{
     float: left;
     background-color: white;
     margin :30px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   
   .card img {
     width: 80%;
     margin: 20px;
     border: 1px solid red;
-  
-  }
-  
-  .card{
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   
   h4,h5{

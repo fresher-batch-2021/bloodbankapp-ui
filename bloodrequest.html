@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="bloodrequest.js"></script>
+    <script src="bloodrequest.js"></script>
 </head>
 
 <body>
@@ -59,39 +59,51 @@
 
     <form>
 
-    <div class="container">
+        <div class="container">
 
-        <h2>Post Your Blood Request</h2>
+            <h2>Post Your Blood Request</h2>
 
-        <hr>
+            <hr>
 
-        <div class="name">
+            <div class="name">
 
-            <input type="name" id="name" placeholder="Name" name="name">
+                <input type="name" id="name" placeholder="Name" name="name">
+
+            </div>
+
+            <div class="password">
+
+                <select type="bloodgroup" name="bloodgroup" id="bloodgroup">   
+
+                    <option>Enter Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O-">O+</option>
+                    <option value="O+">O-</option>
+                    
+                </select>
+
+            </div>
+
+            <div class="phoneNumber">
+
+                <input type="phoneNumber" id="phoneNumber" placeholder="Phone Number" name="phoneNumber">
+
+            </div>
+
+            <div class="city">
+
+                <input type="city" id="city" placeholder="City" name="city">
+
+            </div>
+
+            <button class="login-button" type="button" onclick="bloodrequest()">Submit</button>
 
         </div>
-
-        <div class="password">
-
-            <input type="bloodgroup" id="bloodgroup" placeholder="Blood Group" name="bloodgroup">
-
-        </div>
-        
-        <div class="phoneNumber">
-
-            <input type="phoneNumber" id="phoneNumber" placeholder="Phone Number" name="phoneNumber">
-
-        </div>
-
-        <div class="city">
-
-            <input type="city" id="city" placeholder="City" name="city">
-
-        </div>
-
-        <button class="login-button" type="button" onclick="bloodrequest()">Submit</button>
-
-    </div>
 
     </form>
 
