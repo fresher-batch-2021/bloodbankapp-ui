@@ -51,11 +51,11 @@ hr{
   
   .Blood-details button{
     background-color:white;
-    border: none;
     padding: 10px 20px;
     border-radius: 20px;
     margin-top: 10px;
     margin-left: 63px;
+    border: 1px solid red;
   }
   
   .Blood-details{
