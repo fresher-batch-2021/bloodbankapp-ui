@@ -101,7 +101,7 @@ font-size: 17px;
 .card img {
   width: 80%;
   margin: 20px;
-  border: 1px solid red;
+  border: 1px solid white;
 }
 
 h4,h5{
@@ -135,8 +135,8 @@ h4,h5{
 
 .go{
   padding-top: 420px;
-  margin-right: 90px;
-  margin-left: 23px;
+  margin-right: 540px;
+  margin-left: 470px;
   text-align: center;
 }
 
@@ -154,12 +154,12 @@ h4,h5{
   text-decoration: none;
 }
 
-/* *****************see more button for available blood ***************/
+/* *****************see more button for Needed  blood ***************/
 
 .go-table{
   padding-top: 33px;
   margin-right: 90px;
-  margin-left: 23px;
+  margin-left: 2px;
   text-align: center;
 }
 

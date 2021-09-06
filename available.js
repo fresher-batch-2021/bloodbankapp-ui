@@ -23,7 +23,7 @@ function availableblood() {
                 `
         <div class="card">
 
-            <img src="assets/image/donors-photo.jpg" alt="Avatar">
+            <img src="assets/image/menimagenew1.jpg" alt="Avatar">
 
             <div class="Blood-details">
 

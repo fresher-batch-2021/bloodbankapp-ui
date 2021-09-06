@@ -19,7 +19,7 @@
 
   .search-container button{
     background-color:rgb(233,233,233);
-    border: none;
+    border: 1px solid red;
     padding: 10px 20px;
     border-radius: 20px;
     margin-top: 10px;

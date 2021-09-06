@@ -57,7 +57,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 75px;
+  padding: 14px 640px;
   text-decoration: none;
   font-size: 17px;
   }
@@ -70,4 +70,50 @@
   
   .header ul{
     list-style-type: none;
+  }
+
+  /* ********************bill cards******************* */
+
+  .bill{
+    position: relative;
+    background-color: white;
+    padding-bottom: 75px;
+    margin-top: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .bill-details{
+    /* border: 1px solid red; */
+    position: absolute;
+    margin-left: 55px;
+    margin-bottom: 70px;
+    padding-top: 1%;
+    padding-bottom: 10%;
+    padding-left: 2%;
+    padding-right: 5%;
+    top: 20%;
+    left: 43%;
+    bottom: 3%;
+  }
+
+  .bill{
+    padding: 190px;
+    background-image: url(assets/image/menimagenew1.jpg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: 50%;
+    margin-top: 56px;
+    margin-left: 180px;
+  }
+
+  .bill-details th{
+    color: red;
+    text-align: left;
+  }
+
+  .bill-details th,td{
+    padding: 10px;
   }
