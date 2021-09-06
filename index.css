@@ -29,12 +29,12 @@ body {
 
 .search-container button{
   background-color:rgb(233,233,233);
-  border: none;
   padding: 10px 20px;
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 5px;
   cursor: pointer;
+  border: 1px solid red;
 }
 
 .search-container  {
@@ -111,11 +111,11 @@ h4,h5{
 
 .Blood-details button{
   background-color:white;
-  border: none;
   padding: 10px 20px;
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 69px;
+  border: 1px solid red;
 }
 
 .Blood-details{
