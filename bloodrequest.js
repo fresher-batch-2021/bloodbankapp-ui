@@ -66,6 +66,8 @@ function bloodrequest() {
 
             let data = res.data;
 
+            console.log(data);
+
             alert("Successfull");
 
             window.location.href = "bloodneed.html";
