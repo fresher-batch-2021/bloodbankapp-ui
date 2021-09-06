@@ -32,7 +32,6 @@ body {
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
-  border:1px solid red;
   margin-top: 10px;
   margin-left: 5px;
   cursor: pointer;
@@ -115,7 +114,6 @@ h4,h5{
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
-  border:1px solid red;
   margin-top: 10px;
   margin-left: 69px;
 }
@@ -147,7 +145,6 @@ h4,h5{
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
-  border:1px solid red;
   margin-top: 10px;
   margin-left: 63px;
 }
@@ -171,7 +168,6 @@ h4,h5{
   border: none;
   padding: 11px 20px;
   border-radius: 20px;
-  border:1px solid red;
   margin-top: 10px;
   margin-left: 63px;
 }

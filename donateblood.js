@@ -49,7 +49,7 @@ function donateblood(){
 
     else{
 
-        console.log(data);
+        console.log(datas);
 
         let url = "https://97233c10-e8bd-4684-98ca-20e5eaf8dd35-bluemix.cloudant.com/bloodbank-blooddonate/";
 
