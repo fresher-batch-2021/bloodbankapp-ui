@@ -77,12 +77,12 @@
   .bill{
     position: relative;
     background-color: white;
+    padding: 190px;
     padding-bottom: 75px;
     margin-top: 50px;
     margin-right: 200px;
     margin-left: 200px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    padding: 190px;
     background-image: url(assets/image/menimagenew1.jpg);
     background-size: 30%;
     background-repeat: no-repeat;
