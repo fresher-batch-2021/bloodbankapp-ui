@@ -1,19 +1,9 @@
-// $(document).ready(function(){
-//     console.log("success");
-//     $("#loginform").submit(login);
-//   });
-  
-  
+ 
 function login() {
-    event.preventDefault();
-      
-   
+    event.preventDefault();  
   
     const email = document.querySelector("#email").value;
-    const password = document.querySelector("#password").value;
-    // const email=$("#email").val();
-    // const password=$("#password").val();
-    
+    const password = document.querySelector("#password").value;  
   
     try{
         Validator.isValidEmail(email,"Email Cannot be Blank");

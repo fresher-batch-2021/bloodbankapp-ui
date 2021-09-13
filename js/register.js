@@ -1,7 +1,3 @@
-// $(document).ready(function(){
-//     console.log("success");
-// $("#regform").submit(register);
-// });
 
 function register() {
     event.preventDefault();
@@ -11,15 +7,7 @@ function register() {
     const userPassword = document.querySelector("#Password").value;
     const confirmPassword = document.querySelector("#confirmPassword").value;
 
-
-    // const userName=$("#userName").val();
-    // const email=$("#email").val();
-    // const userPassword=$("#userPassword").val();
-    // const confirmPassword=$("#confirmPassword").val();
-
     try {
-
-        //Validate Form Fields...
 
         Validator.isValidEmail(email, "Email Cannot be Blank");
     

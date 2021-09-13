@@ -53,24 +53,24 @@
   /* ************************Header Menu Items*********************/
   
   .header a{
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 640px;
-  text-decoration: none;
-  font-size: 17px;
-  }
-  
-  .header{
-      overflow: hidden;
-      background-color: red;   
-     
-  }
-  
-  .header ul{
-    list-style-type: none;
-  }
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 123px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    
+    .header{
+        overflow: hidden;
+        background-color: red;   
+       
+    }
+    
+    .header ul{
+      list-style-type: none;
+    }
 
   /* ********************bill cards******************* */
 
@@ -127,25 +127,7 @@
     height: 80%;
     border: 2px solid red;
   }
-  .header a{
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 123px;
-    text-decoration: none;
-    font-size: 17px;
-    }
-    
-    .header{
-        overflow: hidden;
-        background-color: red;   
-       
-    }
-    
-    .header ul{
-      list-style-type: none;
-    }
+
 
      /* *********************Footer*********************** */
 
