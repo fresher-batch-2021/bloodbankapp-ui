@@ -6,10 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Register.css">
-    <script src="register.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/Register.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+ 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
+
 
 <body>
 
@@ -18,7 +32,7 @@
 
         <nav class="topnav" aria-label="image">
 
-            <img src="assets/image/BloodLogo.png" alt="image">
+            <img src="image/BloodLogo.png" alt="image">
 
             <nav class="search-container" aria-label="signUpsignIn">
 
@@ -59,8 +73,8 @@
 
     <!-- --------------------- Common Fields----------------- -->
 
-    <form>
-
+    <!-- <form id="regform" method="POST"> -->
+    
         <div class="container">
 
             <h2>Register</h2>
@@ -69,29 +83,33 @@
 
             <div class="name">
 
-                <input type="name" id="name" placeholder="Name" name="name">
+                <input type="name" id="name" placeholder="Name" name="name" autocomplete="off" autofocus>
 
             </div>
 
             <div class="email">
 
-                <input type="email" id="email" placeholder="Email" name="email">
+                <input type="email" id="email" placeholder="Email" name="email" autocomplete="off" autofocus>
 
             </div>
 
             <div class="password">
 
-                <input type="password" id="pswd" placeholder="Password" name="pswd">
+                <input type="password" id="password" placeholder="Password" name="password" autocomplete="off"
+                    autofocus>
 
             </div>
 
-            <div class="Cpassword">
+            <div class="confirmPassword">
 
-                <input type="password" id="cpswd" placeholder="Confirm Password" name="cpswd">
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" name="confirmPassword"
+                    autocomplete="off" autofocus>
 
             </div>
 
-            <button class="register-button" type="button" onclick="store()"> Submit </button>
+            <!-- <button class="register-button" type="button"> Submit </button> -->
+            <button class="register-button" type="Submit" id="submit" value="Submit">Submit</button>
+            <button class="register-button" type="reset" id="reset" value="Reset">Reset</button>&nbsp;&nbsp;&nbsp;
 
         </div>
 
@@ -116,7 +134,9 @@
 
     </div>
 
+  
 
 </body>
 
 </html>
+

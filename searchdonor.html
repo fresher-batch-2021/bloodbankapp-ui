@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/searchdonor.css">
+
+</head>
+<body>
+     <!-- -------------------header starts------------- -->
+
+     <header>
+
+        <nav class="topnav" aria-label="image"> 
+
+            <img src="assets/image/BloodLogo.png" alt="image">
+
+            <nav class="search-container" aria-label="searchBar">
+
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Go</button>
+
+            </nav>
+
+        </nav>
+
+        <!-- -------------header ends--------------- -->
+
+        <nav class="header" aria-label="head">
+            <ul>
+                <a href="Available.html">
+                    <li>BLOOD DONORS</li>
+                </a>
+                <a href="donate.html">
+                    <li>BLOOD NEED</li>
+                </a>
+                <a href="bloodneed.html">
+                    <li>SEARCH DONOR</li>
+                </a>
+                <a href="index.html">
+                    <li>LOG OUT</li>
+                </a>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- --------------------- Common Fields----------------- -->
+
+    <form>
+
+        <div class="container">
+
+            <h2>Search Donor</h2>
+
+            <hr>
+
+            <div class="name">
+
+                <input type="name" name="name" id="name" placeholder="Enter Name" required autocomplete="off"
+                autofocus> <br>
+            </div>
+
+            <div class="bloodtype">
+
+                <input type="bloodtype" name="bloodtype" id="bloodtype" placeholder="Enter Blood Type" required
+                autocomplete="off" autofocus> <br>
+
+            </div>
+
+            <div class="city">
+
+                <input type="city" name="city" id="city" placeholder="Enter City" required
+                autocomplete="off" autofocus> <br>
+
+            </div>
+
+            <button class="login-button " type="submit" id="submit">Submit</button>
+
+        </div>
+
+    </form>
+
+</body>
+</html>

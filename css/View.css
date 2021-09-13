@@ -113,6 +113,20 @@
     padding: 10px;
   }
 
+  .donarCard{
+    position: relative;
+    background-color: white;
+    
+    height: 400px;
+    margin: 40px 150px;
+  }
+  .table-image{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 80%;
+    border: 2px solid red;
+  }
   .header a{
     float: left;
     display: block;

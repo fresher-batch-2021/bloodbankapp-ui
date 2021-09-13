@@ -2,26 +2,13 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </head>
 
 <body>
@@ -36,7 +23,7 @@
 
             <nav class="search-container" aria-label="searchBar">
 
-                <!-- <div class="box-button"><a href="#"> Active Donors : 123 </a></div> -->
+               <!-- <div class="box-button"><a href="#"> Active Donors : 123 </a></div> -->
 
                 <button><a href="admin.html"> Admin </a></button>
 
@@ -50,15 +37,7 @@
 
         <nav class="header" aria-label="head">
             <ul>
-                <a href="index.html">
-                    <li>HOME</li>
-                </a>
-                <a href="Available.html">
-                    <li>BLOOD DONORS</li>
-                </a>
-                <a href="bloodneed.html">
-                    <li>BLOOD NEED</li>
-                </a>
+              
                 <a href="aboutus.html">
                     <li>ABOUT US</li>
                 </a>
@@ -71,10 +50,9 @@
 
     <!-- --------------------- Common Fields----------------- -->
 
-
     <div class="background-image">
 
-        <form class="registerForm" onsubmit="register()">
+        <form>
 
             <div class="form-container">
 
@@ -94,18 +72,18 @@
 
                 <div class="password">
 
-                    <input type="password" id="Password" placeholder="Password" name="password">
+                    <input type="password" id="pswd" placeholder="Password" name="pswd">
 
                 </div>
 
                 <div class="Cpassword">
 
-                    <input type="password" id="confirmPassword" placeholder="Confirm Password" name="confirmPassword">
+                    <input type="password" id="cpswd" placeholder="Confirm Password" name="cpswd">
 
                 </div>
 
-                <button class="register-button" type="Submit" id="submit" value="Submit">Submit</button>
-                <button class="register-buttons" type="reset" id="reset" value="Reset">Reset</button>
+                <button class="register-button" type="button" onclick="store()"> Submit </button>
+
             </div>
 
         </form>
@@ -179,7 +157,7 @@
 
     <div class="go">
 
-        <button><a href="Available.html"> See More </a></button>
+        <button><a href="Login.html"> See More </a></button>
 
     </div>
 
@@ -283,7 +261,7 @@
 
     <div class="go-table">
 
-        <button><a href="bloodneed.html"> See More </a></button>
+        <button><a href="Login.html"> See More </a></button>
 
     </div>
 
@@ -364,7 +342,7 @@
             <td>B+</td>
             <td>Kanchipuram</td>
         </tr>
-
+        
     </table>
 
     <table class="benefits-table">
@@ -397,6 +375,36 @@
 
     </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="footer-dark">
 
         <footer>
@@ -413,11 +421,6 @@
         </footer>
 
     </div>
-    <script src="js/register.js"></script>
-    <script src="js/validator.js"></script>
-    <script src="js/emailValidation.js"></script>
-    <script src="js/service.js"></script>
-
 
 </body>
 

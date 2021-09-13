@@ -9,7 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(233,233,233);
   }
-  
+ 
   /* *************************Search bar****************************** */
   
   .search-container input[type=text] {
@@ -38,7 +38,7 @@
   .search-container button:hover {
     background: rgb(230, 187, 187);
   }
- 
+
   /* *****************************Image CSS***************************  **/
   
   .topnav {
@@ -57,7 +57,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 68px;
+  padding: 14px 110px;
   text-decoration: none;
   font-size: 17px;
   }
@@ -72,31 +72,69 @@
     list-style-type: none;
   }
 
-  /* ***************table****************/
+  /* **************blood request form**************** */
 
-  td, tr {
-    background-color: white;
-    border: 1px solid  rgb(233,233,233);
+  input[type=name], input[type=bloodgroup] , input[type=phoneNumber] , input[type=city] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0px;
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    background-color: #f2f2f2;  
+  }
+
+  select[type="bloodgroup"]{
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0px;
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    background-color: #f2f2f2;  
+  }
+
+  .text{
+    color:#f2f2f2 ;
+  }
+
+  h2{
     text-align: center;
-    padding: 8px;
   }
 
- th{
-  background-color : #808080;
-  border: 1px solid white;
-  padding: 8px;
-  color: white;
-}
+  hr{
+    border: 1px solid rgb(233,233,233);
+    margin-top: 20px;
+    margin-bottom: 20PX;
+    }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
-    margin : 0 auto;
-    margin-top: 60px;
+ /* *************container for blood request************** */
+
+.container{
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-top: 11px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-   /* *********************Footer*********************** */
+  .login-button{
+    background-color: red; 
+    color: white;
+      border-radius: 25px;
+      border: none;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin-left: 95px;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+   }
+
+    /* *********************Footer*********************** */
 
 .footer-dark {
   padding:30px 0;

@@ -2,10 +2,10 @@ function donateblood(){
 
     event.preventDefault();
 
-    var donatebloodname = document.getElementById("name").value;
-    var donatebloodgroup = document.getElementById("bloodgroup").value;
-    var donatephonenumber = document.getElementById("phoneNumber").value;
-    var donatecity = document.getElementById("city").value;
+    const donatebloodname = document.getElementById("name").value;
+    const donatebloodgroup = document.getElementById("bloodgroup").value;
+    const donatephonenumber = document.getElementById("phoneNumber").value;
+    const donatecity = document.getElementById("city").value;
 
 
     let datas = {
@@ -71,7 +71,7 @@ function donateblood(){
 
             console.log(data);
 
-            alert("Successfull");
+            alert(" Donated Successfull");
 
             window.location.href = "available.html";
 

@@ -10,7 +10,7 @@ body{
 }
 
 .background-image{
-    background-image: url(assets/image/BloodImage.png);
+    background-image: url(/assets/image/BloodImage.png);
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 500px;

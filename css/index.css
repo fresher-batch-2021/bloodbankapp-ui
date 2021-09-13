@@ -11,13 +11,13 @@ body {
 }
 
 .background-image{
-  background-image: url(assets/image/newbackground.jpg);
-  min-height: 500px;
+ background-image: url("/assets/Image/newbackgrounds.jpg");
+  min-height: 500px; 
   /* Center and scale the image nicely */
-  background-position: center;
+   /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative; */
 }
 
 /* *************Sign-in Sign-up Admin*********** */
@@ -51,11 +51,18 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #e9e9e9;
+  position: relative;
 }
 
 .topnav img{
   margin-left: 10px;
 }
+
+/* .box-button a{
+  position: absolute;  
+ padding-right:900px;
+ margin: 1px;
+} */
 
 /* ************************Header Menu Items*********************/
 
@@ -64,7 +71,7 @@ float: left;
 display: block;
 color: white;
 text-align: center;
-padding: 14px 123px;
+padding: 14px 120px;
 text-decoration: none;
 font-size: 17px;
 }
@@ -208,10 +215,15 @@ table {
   margin-top: 45px;
 }
 
+td a{
+  color: black;
+}
+
 /* *********************Footer*********************** */
 
 .footer-dark {
   padding:30px 0;
+  margin-top: 150px;
   color:#f0f9ff;
   background-color:#282d32;
 }
@@ -261,14 +273,26 @@ input[type=name], input[type=email], input[type=password], input[type=cpassword]
 .register-button{
   color: white;
   background-color: red; 
-  
     border-radius: 25px;
     border: none;
     padding: 12px 21px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin-left: 130px;
+    margin-left: 97px;
+    margin-top: 10px;
+}
+
+.register-buttons{
+  color: white;
+  background-color: red; 
+    border-radius: 25px;
+    border: none;
+    padding: 12px 21px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 5px;
     margin-top: 10px;
 }
 
@@ -291,6 +315,41 @@ a{
 }
 
 .form-container h2{
-  margin-left: 130px;
-  padding-bottom: 13px;
+  margin-left: 138px;
+}
+
+/* ************Benefits table ************ */
+
+.benefits-table{
+  margin-top: 100px;
+}
+
+.benefits-table th{
+padding: 2%;
+padding-right: 60px;
+}
+
+.benefits-table li{
+  padding: 10px;
+  /* float: left; */
+  display: inline-block;
+  
+}
+
+/* ************Recent donor header************* */
+
+.recent-blood-donors{
+  padding-top: 70px;
+  text-align: center;
+}
+
+/* ***************Recent Table******************* */
+
+.recent-table th{
+  text-align: center;
+  padding: 8px;
+}
+
+.recent-table td {
+  text-align: center;
 }
