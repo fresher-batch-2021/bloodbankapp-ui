@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +10,32 @@
     <link rel="stylesheet" href="css/searchdonor.css">
 
 </head>
+
 <body>
-     <!-- -------------------header starts------------- -->
+    <!-- -------------------header starts------------- -->
 
-     <header>
+    <header>
 
-        <nav class="topnav" aria-label="image"> 
+        <nav class="topnav" aria-label="image">
 
-            <img src="assets/image/BloodLogo.png" alt="image">
+            <a href="index.html">
+                <img src="assets/image/BloodLogo.png" alt="image">
+            </a>
 
             <nav class="search-container" aria-label="searchBar">
 
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit">Go</button>
+                <button><a href="admin.html"> Admin </a></button>
+
+                <button><a href="Login.html"> Sign In </a></button>
 
             </nav>
+
+            <div class="active-donor">
+
+                <p>Active Donor</p>
+                <P> 62 </P>
+
+            </div>
 
         </nav>
 
@@ -31,6 +43,9 @@
 
         <nav class="header" aria-label="head">
             <ul>
+                <a href="index.html">
+                    <li>HOME</li>
+                </a>
                 <a href="Available.html">
                     <li>BLOOD DONORS</li>
                 </a>
@@ -40,9 +55,10 @@
                 <a href="searchdonor.html">
                     <li>SEARCH DONOR</li>
                 </a>
-                <a href="index.html">
-                    <li>LOG OUT</li>
+                <a href="aboutus.html">
+                    <li>ABOUT US</li>
                 </a>
+
             </ul>
 
         </nav>
@@ -59,31 +75,37 @@
 
             <hr>
 
-            <div class="name">
-
-                <input type="name" name="name" id="name" placeholder="Enter Name" required autocomplete="off"
-                autofocus> <br>
-            </div>
-
             <div class="bloodtype">
 
-                <input type="bloodtype" name="bloodtype" id="bloodtype" placeholder="Enter Blood Type" required
-                autocomplete="off" autofocus> <br>
+                <select type="bloodtype" name="bloodtype" id="bloodtype">
+
+                    <option>Enter Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O-">O+</option>
+                    <option value="O+">O-</option>
+
+                </select>
 
             </div>
 
             <div class="city">
 
-                <input type="city" name="city" id="city" placeholder="Enter City" required
-                autocomplete="off" autofocus> <br>
+                <input type="city" name="city" id="city" placeholder="Enter City" required autocomplete="off" autofocus>
+                <br>
 
             </div>
 
-            <button class="login-button " type="submit" id="submit">Submit</button>
+            <button class="login-button " type="submit" id="submit">Search</button>
 
         </div>
 
     </form>
 
 </body>
+
 </html>

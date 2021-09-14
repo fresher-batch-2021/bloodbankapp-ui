@@ -46,11 +46,23 @@ body {
   background: rgb(230, 187, 187);
 }
 
-/* *****************************Image CSS***************************  **/
+/* ***************Active Donor**************** */
+
+.active-donor {
+  text-align: center;
+  color: white;
+  background-color: red; 
+  float: right;
+  padding : 8px;
+  margin-top: 18px;
+  margin-right: 2px;
+
+}
 
 .topnav {
   overflow: hidden;
   background-color: #e9e9e9;
+  padding: 6px;
   position: relative;
 }
 
@@ -71,7 +83,7 @@ float: left;
 display: block;
 color: white;
 text-align: center;
-padding: 14px 120px;
+padding: 14px 82px;
 text-decoration: none;
 font-size: 17px;
 }

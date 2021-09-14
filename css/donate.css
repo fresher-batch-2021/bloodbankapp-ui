@@ -10,34 +10,32 @@
     background-color: rgb(233,233,233);
   }
   
-  /* *************************Search bar****************************** */
-  
-  .search-container input[type=text] {
-    width: 310px;
-    padding: 9px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-  }
-  
-  .search-container button{
-    background-color: red;
-    color: white;
-    float: right;
-    padding: 11.5px;
-    margin-top: 8.4px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .search-container  {
-    padding: 16px 10px;
-    float: right;
-  }
-  
-  .search-container button:hover {
-    background: rgb(230, 187, 187);
-  }
+   
+ /* *************Sign-in Sign-up Admin*********** */
+
+.search-container a{
+  text-decoration: none;
+  color: black;
+}
+
+.search-container button{
+  background-color:rgb(233,233,233);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.search-container  {
+  padding: 16px 25px;
+  float: right;
+}
+
+.search-container button:hover {
+  background: rgb(230, 187, 187);
+}
   
   /* *****************************Image CSS***************************  **/
   
@@ -57,7 +55,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 110px;
+  padding: 14px 159px;
   text-decoration: none;
   font-size: 17px;
   }

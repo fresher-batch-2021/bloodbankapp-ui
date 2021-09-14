@@ -13,10 +13,34 @@ body{
     background-image: url(/assets/image/BloodImage.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 500px;
+    padding-top: 300px;
   }
 
 p{
     text-align: center;
     padding-top: 53px;
+    padding-bottom: 53px;
+    font-size: 20px;
 }
+
+/* ************* */
+
+.container{
+    padding: 30px;
+    padding-bottom: 70px;
+    background-color: white;
+  }
+
+  .details{
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+
+  .details a{
+      text-decoration: none;
+  }
+
+  img{
+      margin-left: 10px;
+  }
