@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="icon" href="assets/image/donors-photo.jpg">
     <link rel="stylesheet" href="css/searchdonor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
 </head>
 
@@ -29,13 +30,6 @@
                 <button><a href="Login.html"> Sign In </a></button>
 
             </nav>
-
-            <div class="active-donor">
-
-                <p>Active Donor</p>
-                <P> 62 </P>
-
-            </div>
 
         </nav>
 
@@ -75,6 +69,24 @@
 
             <hr>
 
+            <div class="city">
+
+                <select type="city" name="city" id="city">
+
+                    <option>Enter City</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="Kanchipuram">Kanchipuram</option>
+                    <option value="Vellore">Vellore</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Karnataka">karnataka</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Telugana">Telugana</option>
+
+                </select>
+
+            </div>
+
             <div class="bloodtype">
 
                 <select type="bloodtype" name="bloodtype" id="bloodtype">
@@ -93,18 +105,46 @@
 
             </div>
 
-            <div class="city">
-
-                <input type="city" name="city" id="city" placeholder="Enter City" required autocomplete="off" autofocus>
-                <br>
-
-            </div>
-
             <button class="login-button " type="submit" id="submit">Search</button>
 
         </div>
 
     </form>
+
+
+    <footer>
+
+        <div class="footer-dark">
+
+            <div class="col item social">
+
+                <div class="tooltip">
+                    <a href="https://www.facebook.com/"><em class="icon ion-social-facebook"></em></a>
+                    <span class="tooltiptext">FaceBook</span>
+                </div>
+
+                <div class="tooltip">
+                    <a href="https://twitter.com/?lang=en"><em class="icon ion-social-twitter"></em></a>
+                    <span class="tooltiptext">Twitter</span>
+                </div>
+
+                <div class="tooltip">
+                    <a href="https://www.whatsapp.com/?lang=en"><em class="icon ion-social-whatsapp"></em></a>
+                    <span class="tooltiptext">whatsapp</span>
+                </div>
+
+                <div class="tooltip">
+                    <a href="https://www.instagram.com/"><em class="icon ion-social-instagram"></em></a>
+                    <span class="tooltiptext">Instagram</span>
+                </div>
+
+            </div>
+
+            <p class="copyright">Company Name © Blood Bank</p>
+
+        </div>
+
+    </footer>
 
 </body>
 

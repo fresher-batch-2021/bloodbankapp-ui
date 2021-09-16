@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <title>Blood Bank</title>
     <link rel="icon" href="assets/image/donors-photo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -44,12 +44,16 @@
 
             </nav>
 
-            <div class="active-donor">
+    <div id="myModal" class="modal">
 
-                <p>Active Donor</p>
-                <P> 62 </P>
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Active Donor : 62</p>
+        </div>
+      
+      </div>
 
-            </div>
 
         </nav>
 
@@ -80,7 +84,6 @@
     </header>
 
     <!-- --------------------- Common Fields----------------- -->
-
 
     <div class="background-image">
 
@@ -407,9 +410,9 @@
 
     </table>
 
-    <div class="footer-dark">
+    <footer>
 
-        <footer>
+        <div class="footer-dark">
 
             <div class="col item social">
 
@@ -437,14 +440,36 @@
 
             <p class="copyright">Company Name © Blood Bank</p>
 
-        </footer>
+        </div>
 
-    </div>
+    </footer>
 
     <script src="js/register.js"></script>
     <script src="js/validator.js"></script>
     <script src="js/emailValidation.js"></script>
     <script src="js/service.js"></script>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        
+        var btn = document.getElementById("myBtn");
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 
 </body>
 

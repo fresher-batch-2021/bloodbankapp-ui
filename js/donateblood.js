@@ -75,7 +75,7 @@ function donateblood(){
 
             window.location.href = "available.html";
 
-            console.log(formData);
+            // console.log(formData);
 
         });
 
